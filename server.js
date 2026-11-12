@@ -30,3 +30,6 @@ app.post('/api/free', (req, res) => {
 });
 
 module.exports = app;
+if (require.main === module) {
+  app.listen(3000, () => console.log('Server chal raha hai http://localhost:3000'));
+}
